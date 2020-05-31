@@ -17,7 +17,7 @@ mod tests {
     }
 }
 
-fn create_all_syllables() -> Vec<String> {
+pub fn create_all_syllables() -> Vec<String> {
     //ng initial a "helper consonant" to display syllables that do not start with a consonant
     let init_consonants =
         vec!["p", "b", "t", "d", "k", "g", "m", "n", "s", "z",
@@ -64,7 +64,7 @@ fn create_all_syllables() -> Vec<String> {
     all_syllables
 }
 
-fn write_to_csv(data: &Vec<String>, file: &str) -> Result<(), Box<dyn Error>> {
+pub fn write_to_csv(data: &Vec<String>, file: &str) -> Result<(), Box<dyn Error>> {
     let mut writer = Writer::from_path(file)?;
     for syllable in data {
         writer.write_record(iter::once(syllable))?;

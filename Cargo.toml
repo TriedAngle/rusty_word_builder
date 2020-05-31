@@ -4,7 +4,12 @@ version = "0.1.0"
 authors = ["Sebastian <Sebastian@Strobl.net>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Syllable and Word generation library written fully in Rust"
+
+[lib]
+name = "try_words"
+path = "src/lib.rs"
+
 
 [dependencies]
 csv = "1.1.3"
