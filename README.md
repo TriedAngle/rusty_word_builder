@@ -19,7 +19,7 @@
 -----
 
 <p align="center">
-  <strong> Syllable and words creation library </strong> for the rust programming language
+  <strong> Syllable and word creation library </strong> for the rust programming language
 </p>
 
 -----
