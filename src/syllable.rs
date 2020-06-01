@@ -262,7 +262,7 @@ impl SyllableBuilder {
                     }
                 }
             }
-            ConsonantCluster::None => panic!("Do not use this option with custom data"),
+            ConsonantClusterLength::None => panic!("Do not use this option with custom data"),
             _ => {}
         }
         self
