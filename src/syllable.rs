@@ -360,6 +360,10 @@ impl SyllableHandler {
         Self { syllables }
     }
 
+    pub fn set_syllables(&mut self, syllables: Vec<String>) {
+        self.syllables = syllables;
+    }
+
     pub fn all(&self) -> Vec<String> {
         self.syllables.clone()
     }
