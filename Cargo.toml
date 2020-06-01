@@ -1,6 +1,6 @@
 [package]
 name = "rusty_word_builder"
-version = "0.6.0"
+version = "0.6.1"
 authors = ["TriedAngle <Sebastian@Strobl.net>"]
 edition = "2018"
 repository = "https://github.com/TriedWorks/rusty_word_builder"
@@ -13,7 +13,7 @@ description = "Syllable and Word generation library written fully in Rust"
 travis-ci = { repository = "TriedWorkds/rusty_word_builder", branch= "master" }
 
 [lib]
-name = "try_words"
+name = "rusty_word_builder"
 path = "src/lib.rs"
 
 [dependencies]
