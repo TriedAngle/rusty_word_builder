@@ -7,6 +7,7 @@ use std::error::Error;
 /// All consonants are moved into consonant_cluster
 /// this is for easier creation
 /// to avoid "undefined behaviour", call the functions in the impl order
+#[derive(Clone, Debug)]
 pub struct SyllableBuilder {
     syllable_structure: SyllableStructure,
     diphthong_settings: Diphthongs,
@@ -349,6 +350,7 @@ impl SyllableBuilder {
     // END CREATION
 }
 
+#[derive(Clone, Debug)]
 pub struct SyllableHandler {
     syllables: Vec<String>,
 }

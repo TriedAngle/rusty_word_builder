@@ -2,7 +2,7 @@
 /// C also represents cluster
 /// V also represents diphthongs and glides
 /// All means CV, VC and CVC syllables
-#[derive(PartialEq, Debug)]
+#[derive(PartialEq, Debug, Clone)]
 pub enum SyllableStructure {
     All,
     CV,
@@ -17,7 +17,7 @@ pub enum SyllableStructure {
 /// DisableGiven: All without supplied ones
 ///
 /// If only some U/W and I/Y/J glides should be generated, add them here
-#[derive(PartialEq, Debug)]
+#[derive(PartialEq, Debug, Clone)]
 pub enum Diphthongs {
     All,
     NoLong,
@@ -29,7 +29,7 @@ pub enum Diphthongs {
 /// All: U/W and I/Y/J glides for all vowels and diphthongs
 /// AllOnlyU: U/W glides for all vowels and diphthongs
 /// AllOnlyY: I/Y/J glides for all vowels and diphthongs
-#[derive(PartialEq, Debug)]
+#[derive(PartialEq, Debug, Clone)]
 pub enum Glides {
     All,
     AllOnlyU,
@@ -37,7 +37,7 @@ pub enum Glides {
 }
 
 /// Max cluster length
-#[derive(PartialEq, Debug)]
+#[derive(PartialEq, Debug, Clone)]
 pub enum ConsonantClusterLength {
     C,
     CC,
@@ -52,7 +52,7 @@ pub enum ConsonantClusterLength {
 /// NoDouble: create all possible cluster but no same in a row (ex: no bb)
 /// OnlyGiven: only supplied clusters
 /// DisableGiven: All possible consonant clusters but exclude the given ones.
-#[derive(PartialEq, Debug)]
+#[derive(PartialEq, Debug, Clone)]
 pub enum ConsonantCluster {
     All,
     NoDouble,
@@ -60,11 +60,13 @@ pub enum ConsonantCluster {
     DisableGiven,
 }
 
+#[derive(Clone, PartialEq, Debug)]
 pub enum WriteOption {
     CSV(String),
     PSQL,
 }
 
+#[derive(Clone, PartialEq, Debug)]
 pub enum SyllableFormat {
     IPA,
     Romanization,

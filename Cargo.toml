@@ -1,6 +1,6 @@
 [package]
 name = "rusty_word_builder"
-version = "0.6.1"
+version = "0.6.2"
 authors = ["TriedAngle <Sebastian@Strobl.net>"]
 edition = "2018"
 repository = "https://github.com/TriedWorks/rusty_word_builder"
